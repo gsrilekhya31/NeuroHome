@@ -294,7 +294,7 @@ page = st.sidebar.radio(
     "Navigation",
     [
         "🏠 Dashboard",
-        "📂 Real EEG Dataset",
+        "🧠 Real EEG Dataset",
         "🧠 Brain Signal Demo",
         "💡 Smart Home Control",
         "📊 Model Results",
@@ -374,7 +374,7 @@ if page == "🏠 Dashboard":
 # =========================================================
 # REAL EEG DATASET
 # =========================================================
-elif page == "📂 Real EEG Dataset":
+elif page == "🧠 Real EEG Dataset":
 
     st.title(
         "📂 Real P300 EEG Dataset"
@@ -720,7 +720,7 @@ elif page == "📂 Real EEG Dataset":
 # =========================================================
 # SIMULATED BRAIN SIGNAL DEMO
 # =========================================================
-elif page == "🧠 Brain Signal Demo":
+elif page == "🧠 Real EEG Dataset":
 
     st.title(
         "🧠 Brain Signal Prediction Demo"
