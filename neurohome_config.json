@@ -1,0 +1,10 @@
+{
+    "threshold": 0.35,
+    "low_freq": 0.5,
+    "high_freq": 30.0,
+    "epoch_start": -0.2,
+    "epoch_end": 0.8,
+    "ml_start": 0.1,
+    "ml_end": 0.7,
+    "resample": 64
+}
