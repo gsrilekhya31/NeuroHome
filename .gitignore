@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+frontend/dist/
+.env
+
+# Old backend backups
+backend/*.before-*
+backend/main_backup.py
+
+# Old frontend backups
+frontend/src/*.backup*
+frontend/src/*_backup*.jsx
+frontend/src/*before*.jsx
+
+# Frontend backup files
+
+frontend/src/*.before-*
+frontend/src/*.backup*
+frontend/src/*.sidebar-backup*

@@ -1,0 +1,9 @@
+/Include/
+/Lib/
+/Scripts/
+/venv/
+/venvcd/
+__pycache__/
+*.py[cod]
+.venv/
+pyvenv.cfg
