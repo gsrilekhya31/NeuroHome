@@ -114,3 +114,137 @@
 
 .activeNow{margin:18px 0;padding:18px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.025)}
 .activeList{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}.activeItem{display:flex;gap:10px;align-items:center;padding:10px 14px;border-radius:10px;background:rgba(70,210,150,.10)}.activeItem span{font-size:11px;font-weight:800;letter-spacing:.08em}.empty{margin-top:12px;opacity:.7;font-size:13px}
+.livingRoom {
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid rgba(130, 155, 180, 0.28);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff, #f0f5fa);
+  box-shadow: 0 12px 32px rgba(35, 55, 80, 0.09);
+  overflow: hidden;
+}
+
+.roomHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.roomHeading h2 {
+  margin: 0;
+  color: #1c3047;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.roomHeading p {
+  margin: 6px 0 0;
+  color: #64758a;
+  font-size: 13px;
+}
+
+.roomLiveBadge {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #e4edf6;
+  color: #36516e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.threeRoomCanvas {
+  width: 100%;
+  height: 480px;
+  min-height: 320px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 13px;
+  background: #dce7f0;
+}
+
+.threeRoomCanvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.threeRoomFallback {
+  display: grid;
+  min-height: 320px;
+  place-items: center;
+  padding: 24px;
+  color: #31445b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.roomLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding: 15px 4px 2px;
+}
+
+.roomLegend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #52657a;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #a5b0bd;
+  box-shadow: 0 0 0 3px rgba(165, 176, 189, 0.13);
+}
+
+.legendDot.isOn {
+  background: #18b981;
+  box-shadow: 0 0 0 3px rgba(24, 185, 129, 0.16), 0 0 10px rgba(24, 185, 129, 0.35);
+}
+
+@media (max-width: 700px) {
+  .livingRoom {
+    padding: 12px;
+  }
+
+  .roomHeading h2 {
+    font-size: 16px;
+  }
+
+  .roomHeading p {
+    font-size: 11px;
+  }
+
+  .threeRoomCanvas {
+    height: 350px;
+    min-height: 280px;
+  }
+
+  .roomLegend {
+    gap: 12px;
+  }
+}
+
+
+/* NeuroHome interactive 3D dollhouse styles */
+.whole-home-panel{margin:22px 0;padding:22px;border:1px solid #243e34;border-radius:16px;background:linear-gradient(145deg,#0b1915,#101f1a);overflow:hidden}
+.floor-live-badge{display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid #2a503e;border-radius:99px;color:#8be4b3;font-size:9px;font-weight:800;letter-spacing:1.2px;white-space:nowrap}.floor-live-badge i{width:7px;height:7px;border-radius:50%;background:#77e4a8;box-shadow:0 0 10px #77e4a8}
+.floor-appliance-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px}.floor-appliance{display:flex;align-items:center;gap:9px;min-width:0;padding:11px;border:1px solid #263e34;border-radius:9px;background:#0a1712;color:#a8bcb1}.floor-appliance-icon{display:grid;place-items:center;width:34px;height:34px;flex:none;border:1px solid #30473b;border-radius:8px;background:#12251b;color:#94a99c;font-size:20px}.floor-appliance-name{min-width:0;font-size:11px;font-weight:700}.floor-appliance strong{margin-left:auto;font-size:8px;letter-spacing:.8px;color:#70887b}.floor-appliance.is-active{border-color:#3b855f;background:#10271c;color:#e2f9eb}.floor-appliance.is-active .floor-appliance-icon{border-color:#4a966d;background:#1c4930;color:#b4f6cd;box-shadow:0 0 12px #4bca8250}.floor-appliance.is-active strong{color:#8ce6b0}.floor-plan-note{margin:12px 2px 0;color:#789084;font-size:10px;line-height:1.65}
+@media(max-width:700px){.whole-home-panel{padding:13px}.whole-home-heading{flex-direction:column}.whole-home-heading h2{font-size:21px}.floor-plan{grid-template-columns:minmax(0,1fr);gap:4px}.floor-room{min-height:245px}.floor-hallway{grid-column:1;align-items:flex-start;flex-direction:column}.floor-appliance-summary{grid-template-columns:1fr 1fr}.floor-room-title b{font-size:9px}}
+@media(max-width:760px){.architectural-plan-wrap{overflow-x:auto}.architectural-plan{width:900px;max-width:none;min-width:900px}.floor-appliance-summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.neurohome-3d-stage{position:relative;width:100%;height:clamp(500px,64vw,760px);min-height:500px;overflow:hidden;border:1px solid #a7b0aa;border-radius:14px;background:#d9dedc;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45),0 18px 38px rgba(0,0,0,.22)}
+.neurohome-3d-canvas{display:block;width:100%;height:100%;outline:none;touch-action:pan-y}
+.neurohome-3d-hint{margin:10px 0 14px;text-align:center;color:#94a89d;font-size:10px;letter-spacing:1.3px;font-weight:700}
+@media(max-width:650px){.neurohome-3d-stage{height:500px;min-height:500px}.neurohome-3d-hint{font-size:8px;letter-spacing:.7px}}

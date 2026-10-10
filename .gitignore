@@ -24,3 +24,8 @@ frontend/src/*_backup*.jsx
 frontend/src/*before*.jsx
 frontend/src/*.before-*
 frontend/src/*.sidebar-backup*
+
+# Deployment: local backups
+frontend/backup-before-3D-integration-*/
+frontend/src/*.bak
+frontend/src/*.voice-backup
